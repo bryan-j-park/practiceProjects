@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Social Profile</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <div id="navBar">
+    <div id="navBarRight">
+      <button id="navBarTitle" onclick="alert('Loading Webpage...')">Pokemon Catch Challenge!</button>
+    </div>
+    <div id="navBarLeft">
+      <button id="logoutButton">Logout</button>
+    </div>
+  </div>
+
+<!-- Main Content Area -->
+    <div id="mainContent">
+      <div id="mainConentLeft">
+
+        <div class="leftContentBoxes">
+          <div class="contentBoxTitle">Water Pokemon:</div>
+          <div class="contentBoxContent" id="waterBackground">
+
+
+            <!-- water pokemon buttons -->
+            <div class="pokemon" id="tentacool">
+              <button class="pokemonButton" id="pokemonButton5" onclick="catchTentacool()">
+                <img class="pokemonPic" src="img/tentacool.png" alt="tentacool image">
+              </button>
+            </div>
+
+            <div class="pokemon" id="krabby">
+              <button class="pokemonButton" id="pokemonButton6" onclick="catchKrabby()">
+                <img class="pokemonPic" src="img/krabby.png" alt="krabby image">
+              </button>
+            </div>
+
+            <div class="pokemon" id="gyarados">
+              <button class="pokemonButton" id="pokemonButton7" onclick="catchGyarados()">
+                <img class="pokemonPic" src="img/gyarados.png" alt="gyarados image">
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- rock pokemon buttons  -->
+        <div class="leftContentBoxes">
+          <div class="contentBoxTitle">Rock Pokemon:</div>
+          <div class="contentBoxContent" id="mountainBackground">
+            <div class="pokemon" id="geodude">
+              <button class="pokemonButton" id="pokemonButton8" onclick="catchGeodude()">
+                <img class="pokemonPic" src="img/geodude.png" alt="geodude image">
+              </button>
+            </div>
+
+            <div class="pokemon" id="onyx">
+              <button class="pokemonButton" id="pokemonButton9" onclick="catchOnyx()">
+                <img class="pokemonPic" src="img/onyx.png" alt="onyx image">
+              </button>
+            </div>
+
+            <div class="pokemon" id="golem">
+              <button class="pokemonButton" id="pokemonButton10" onclick="catchGolem()">
+                <img class="pokemonPic" src="img/golem.png" alt="golem image">
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- bug pokemon buttons  -->
+        <div class="leftContentBoxes">
+          <div class="contentBoxTitle">Bug Pokemon:</div>
+          <div class="contentBoxContent" id="forestBackground">
+
+            <div class="pokemon" id="beedrill">
+                <button class="pokemonButton" id="pokemonButton11" onclick="catchBeedrill()">
+                  <img class="pokemonPic" src="img/beedrill.png" alt="beedrill image">
+                </button>
+            </div>
+
+            <div class="pokemon" id="caterpie">
+              <button class="pokemonButton" id="pokemonButton12" onclick="catchCaterpie()">
+                <img class="pokemonPic" src="img/caterpie.png" alt="Caterpie image">
+              </button>
+            </div>
+
+            <div class="pokemon" id="scyther">
+              <button class="pokemonButton" id="pokemonButton13" onclick="catchScyther()">
+                <img class="pokemonPic" src="img/scyther.png" alt="scyther image">
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+<!-- right side of content area  -->
+      <div id="mainContentRight">
+        <div class="rightContentBoxes">
+          <div id="pokemonCaughtTitle">Pokemon Caught:</div>
+          <div id="pokemonCaughtBox">
+            0
+          </div>
+        </div>
+        <div id="pokemonContentBoxes">
+          <div id="pokemonBoxTitle">Catch Them All:</div>
+
+            <div class="pokemon" id="magikarp">
+              <button class="pokemonButton" id="pokemonButton1" onclick="catchMagikarp()">
+                <img class="pokemonPic" src="img/magikarp.png" alt="magikarp image">
+              </button>
+              <div class="pokemonName">Magikarp</div>
+            </div>
+
+            <div class="pokemon" id="eevee">
+              <button class="pokemonButton" id="pokemonButton2" onclick="catchEevee()">
+                <img class="pokemonPic" src="img/eevee.png" alt="eevee image">
+              </button>
+              <div class="pokemonName">Eevee</div>
+            </div>
+
+            <div class="pokemon" id="squirtle">
+              <button class="pokemonButton" id="pokemonButton3" onclick="catchSquirtle()">
+                <img class="pokemonPic" src="img/squirtle.png" alt="squirtle image">
+              </button>
+              <div class="pokemonName">Squirtle</div>
+            </div>
+
+            <div class="pokemon" id="snorlax">
+              <button class="pokemonButton" id="pokemonButton4" onclick="catchSnorlax()">
+                <img class="pokemonPic" src="img/snorlax.png" alt="snorlax image">
+              </button>
+              <div class="pokemonName">Snorlax</div>
+            </div>
+        </div>
+      </div>
+    </div>
+  
+<script src="script.js"></script>
+</body>
+</html>

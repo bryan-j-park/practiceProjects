@@ -1,0 +1,188 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+  padding: 0 15%;
+}
+
+button{
+  background: none;
+  background-color: #54BAB9;
+  border: none;
+  color: #F7ECDE;
+  cursor: pointer;
+}
+
+button:hover{
+  cursor: url('img/pokeballClosed.png'), auto;
+}
+
+button:active{
+  cursor: url('img/pokeballOpen.png'), auto;
+}
+
+
+
+/* Navigation bar  */
+#navBar{
+  background-color: #54BAB9;
+  height: 100px;
+  color: #F7ECDE;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10%;
+}
+
+#navBarTitle{
+  font-size: 50px;
+  cursor: pointer;
+}
+
+#logoutButton{
+  background-color: #F7ECDE;
+  box-shadow: 2px 4px #E9DAC1;
+  cursor: pointer;
+  color: #54BAB9;
+  font-size: 25px;
+  padding: 10px 25px;
+}
+
+#logoutbutton:active{
+  box-shadow: none ;
+  opacity: .6;
+}
+
+/* Main Content Area  */
+#mainContent{
+  background-color: #F1DDBF;
+  height: 100%;
+  padding: 30px 10%;
+  display: flex;
+  justify-content: center;
+}
+
+#mainContentLeft{
+  background-color: #54BAB9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.leftContentBoxes{
+  background-color: white;
+  border-radius: 20px;
+  height: 250px;
+  width: 600px;
+  margin-bottom: 25px;
+}
+
+.contentBoxTitle{
+  background-color: #525E75;
+  color: #F1DDBF;
+  font-size: 35px;
+  height: 30%;
+  display: flex;
+  align-items: center;
+  padding: 0 10%;
+}
+
+.contentBoxContent{
+  background-color: #5F9DF7;
+  height: 70%;
+  padding: 0 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contentBoxText{
+  background-color: white;
+  font-size: 25px;
+  flex: 5;
+}
+
+#mountainBackground{
+  background-color: #9F8772;
+}
+
+#forestBackground{
+  background-color: #749F82;
+}
+
+/* Right side of body  */
+#mainContentRight{
+  background-color: #F1DDBF;
+}
+
+.rightContentBoxes{
+  background-color: white;
+  height: 250px;
+  width: 250px;
+  margin: 0 50px 25px 100px;
+  border-radius: 20px;
+}
+
+#pokemonContentBoxes{
+  background-color: white;
+  width: 250px;
+  margin: 0 50px 25px 100px;
+  border-radius: 20px;
+  padding-bottom: 5px;
+}
+
+#pokemonCaughtTitle{
+  background-color: #525E75;
+  color: #F1DDBF;
+  border-radius: 20px;
+  font-size: 24px;
+  height: 30%;
+  display: flex;
+  align-items: center;
+  padding: 0 10%;
+}
+
+#pokemonCaughtBox{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 100px;
+  margin-top: 30px;
+}
+
+#pokemonBoxTitle{
+  background-color: #525E75;
+  color: #F1DDBF;
+  border-radius: 20px;
+  font-size: 25px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  padding: 0 10%;
+}
+
+.pokemon{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 10px;
+}
+
+.pokemonPic{
+  height: 50px;
+}
+
+.pokemonName{
+  font-size: 30px;
+}
+
+.pokemonButton{
+  background: none;
+  border: none;
+}
+
+
+
