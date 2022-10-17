@@ -38,6 +38,7 @@ button:active{
 }
 
 #navBarTitle{
+  background: none;
   font-size: 50px;
   cursor: pointer;
 }
