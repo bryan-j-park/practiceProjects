@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Matching Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="container">
+    <h1>Matching Game</h1>
+    <!-- randomly generated ace image  -->
+    <div id="numberOfMatches">
+      <div id="matchesTitle">Number Of Correct Matches:</div>
+      <div id="totalMatches">0</div>
+    </div>
+    <div class="aceContainer">
+      <div id="suitName">Clubs</div>
+      <img class="aceImage" id="randomAce" src="img/aceOfClubs.png" alt="Picture of an ace">
+      <button class="aceButton" onclick="randomAceGenerated()">Randomize</button>
+    </div>
+    
+    <!-- Ace container  -->
+    <div id="buttonContainer">
+      <div class="aceContainer">
+        <img class="aceImage" id="aceOfClubs" src="img/aceOfClubs.png" alt="image of the ace of clubs">
+        <button class="aceButton" onclick="matchClubs()">Clubs</button>
+      </div>
+
+      <div class="aceContainer">
+        <img class="aceImage" id="aceOfSpades" src="img/aceOfSpades.png" alt="image of the ace of spades">
+        <button class="aceButton" onclick="matchSpades()">Spades</button>
+      </div>
+
+      <div class="aceContainer">
+        <img class="aceImage" id="aceOfHearts" src="img/aceOfHearts.png" alt="image of the ace of hearts">
+        <button class="aceButton" onclick="matchHearts()">Hearts</button>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
