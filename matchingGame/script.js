@@ -1,10 +1,13 @@
 var count = 0
 var totalMatches = document.querySelector('#totalMatches')
 var suitName = document.querySelector('#suitName')
+var randomAce = document.querySelector('#randomAce')
+var randomButton = document.querySelector('#randomButton')
 var spades = 'img/aceOfSpades.png'
 var hearts = 'img/aceOfHearts.png'
 var clubs = 'img/aceOfClubs.png'
-var arrayOfAces = [hearts, spades , clubs]
+var diamonds = 'img/aceOfDiamonds.png'
+var arrayOfAces = [hearts, spades, diamonds, clubs]
 
 function randomAceGenerated(){
   var pick = Math.random();
@@ -15,6 +18,9 @@ function randomAceGenerated(){
   }
   else if(arrayOfAces[1] == randomPick){
     suitName.innerText = 'Spades'
+  }
+  else if(arrayOfAces[2] == randomPick){
+    suitName.innerText = 'Diamonds'
   }
   else{
     suitName.innerText = 'Clubs';
@@ -30,6 +36,8 @@ function matchClubs(){
   else{
     alert('INCORRECT!')
   }
+  randomAce.src = 'img/backCard.png'
+  suitName.innerText = 'Press the Random Button'
 }
 
 function matchHearts(){
@@ -41,6 +49,8 @@ function matchHearts(){
   else{
     alert('INCORRECT!')
   }
+  randomAce.src = 'img/backCard.png'
+  suitName.innerText = 'Press the Random Button'
 }
 
 function matchSpades(){
@@ -52,4 +62,19 @@ function matchSpades(){
   else{
     alert('INCORRECT!')
   }
+  randomAce.src = 'img/backCard.png'
+  suitName.innerText = 'Press the Random Button'
+}
+
+function matchDiamonds(){
+  if(suitName.innerText == 'Diamonds'){
+    alert('CORRECT!');
+    count++;
+    totalMatches.innerText = count;
+  }
+  else{
+    alert('INCORRECT!')
+  }
+  randomAce.src = 'img/backCard.png'
+  suitName.innerText = 'Press the Random Button'
 }
